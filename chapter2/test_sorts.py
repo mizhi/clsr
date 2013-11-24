@@ -1,8 +1,8 @@
 import random
 from isort import isort
-from merge_sort import merge_sort
+from merge_sorts import merge_sort_without_sentinel, merge_sort_with_sentinel
 
-SORT_FUNCS = (merge_sort, isort)
+SORT_FUNCS = (merge_sort_without_sentinel, merge_sort_with_sentinel, isort)
 
 class TestMergeSort(object):
     def setUp(self):
