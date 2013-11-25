@@ -1,6 +1,6 @@
 # Insertion Sort, PG 17
 
-def isort(unsorted_list):
+def insertion_sort(unsorted_list):
     l_copy = unsorted_list[:]
     for i in range(1, len(l_copy)):
         temp_value = l_copy[i]

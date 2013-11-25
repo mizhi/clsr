@@ -1,13 +1,15 @@
 import random
-from isort import isort
+from insertion_sort import insertion_sort
 from merge_sorts import (merge_sort_without_sentinel,
                          merge_sort_with_sentinel,
                          merge_sort_inplace)
+from bubble_sort import bubblesort
 
 
 SORT_FUNCS = (merge_sort_without_sentinel, merge_sort_with_sentinel,
               merge_sort_inplace,
-              isort)
+              insertion_sort,
+              bubblesort)
 
 class TestMergeSort(object):
     def setUp(self):
