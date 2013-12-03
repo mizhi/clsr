@@ -1,4 +1,4 @@
-# Insertion Sort, PG 17
+# Chapter 2, Insertion Sort, PG 17
 
 def insertion_sort(unsorted_list):
     l_copy = unsorted_list[:]

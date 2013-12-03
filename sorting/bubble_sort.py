@@ -1,4 +1,4 @@
-# Insertion Sort, PG 38
+# Chapter 2, Insertion Sort, PG 38
 #
 # This, of course, is bubblesort.
 

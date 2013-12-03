@@ -1,4 +1,4 @@
-# Insertion Sort, PG 29
+# Chapter 2, Merge Sort, PG 29
 #
 # There are 3 separate implementations of merge sort, each playing with
 # different ways of implementing the merge step.
