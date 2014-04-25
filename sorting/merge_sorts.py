@@ -88,19 +88,19 @@ def merge_sort_with_sentinel(unsorted_list):
 
 
 def _merge_inplace(unsorted_list, l, m, r):
-    l_copy = [None] + unsorted_list[l:m]
-    r_copy = [None] + unsorted_list[m:r]
-    i = len(l_copy) - 1
-    j = len(r_copy) - 1
-    k = r - 1
-    while (l_copy[i] is not None) or (r_copy[j] is not None):
-        if l_copy[i] < r_copy[j]:
-            unsorted_list[k] = r_copy[j]
-            j -= 1
+    i = l
+    j = m
+
+    while i < m and j < r:
+        if unsorted_list[i] < unsorted_list[j]:
+            i += 1
         else:
-            unsorted_list[k] = l_copy[i]
-            i -= 1
-        k -= 1
+            tmp = unsorted_list[j]
+            unsorted_list[i+1:j+1] = unsorted_list[i:j]
+            unsorted_list[i] = tmp
+            i += 1
+            m += 1
+            j += 1
 
 def merge_sort_inplace(unsorted_list, l = None, r = None):
     if l is None:
